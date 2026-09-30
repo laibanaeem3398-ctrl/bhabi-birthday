@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Bhabi ❤️</title>
+
+    <style>
+
+        /* =========================
+           RESET
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        /* =========================
+           BODY
+        ========================= */
+
+        body {
+
+            min-height: 100vh;
+
+            width: 100%;
+
+            font-family: Arial, sans-serif;
+
+            background:
+                radial-gradient(
+                    circle at top,
+                    #ffd6e7,
+                    transparent 40%
+                ),
+                linear-gradient(
+                    135deg,
+                    #ff758c,
+                    #ff7eb3,
+                    #c471ed
+                );
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            overflow-x: hidden;
+
+            color: white;
+
+            padding: 20px;
+        }
+
+
+        /* =========================
+           FLOATING HEARTS
+        ========================= */
+
+        .heart {
+
+            position: fixed;
+
+            bottom: -50px;
+
+            font-size: 30px;
+
+            animation:
+                heartMove 7s linear infinite;
+
+            z-index: 0;
+
+            pointer-events: none;
+        }
+
+
+        .heart:nth-child(1) {
+            left: 10%;
+            animation-delay: 1s;
+        }
+
+        .heart:nth-child(2) {
+            left: 30%;
+            animation-delay: 3s;
+        }
+
+        .heart:nth-child(3) {
+            left: 60%;
+            animation-delay: 2s;
+        }
+
+        .heart:nth-child(4) {
+            left: 85%;
+            animation-delay: 4s;
+        }
+
+
+        @keyframes heartMove {
+
+            0% {
+
+                transform:
+                    translateY(0)
+                    rotate(0);
+
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            100% {
+
+                transform:
+                    translateY(-110vh)
+                    rotate(360deg);
+
+                opacity: 0;
+            }
+        }
+
+
+        /* =========================
+           MAIN CARD
+        ========================= */
+
+        .card {
+
+            width: min(100%, 620px);
+
+            padding: clamp(25px, 5vw, 45px)
+                     clamp(18px, 5vw, 35px);
+
+            text-align: center;
+
+            background:
+                rgba(255, 255, 255, 0.20);
+
+            backdrop-filter:
+                blur(15px);
+
+            -webkit-backdrop-filter:
+                blur(15px);
+
+            border:
+                2px solid
+                rgba(255,255,255,0.4);
+
+            border-radius: 30px;
+
+            box-shadow:
+                0 20px 50px
+                rgba(0,0,0,0.25);
+
+            position: relative;
+
+            z-index: 2;
+
+            overflow: hidden;
+        }
+
+
+        /* =========================
+           TOP TEXT
+        ========================= */
+
+        .small-text {
+
+            font-size: clamp(13px, 3vw, 18px);
+
+            letter-spacing:
+                clamp(1px, 0.5vw, 3px);
+
+            margin-bottom: 10px;
+        }
+
+
+        /* =========================
+           TITLE
+        ========================= */
+
+        h1 {
+
+            font-size:
+                clamp(34px, 8vw, 58px);
+
+            line-height: 1.1;
+
+            color: white;
+
+            text-shadow:
+                0 0 10px #ff1493,
+                0 0 20px #ff1493;
+
+            animation:
+                titleGlow 2s infinite alternate;
+        }
+
+
+        @keyframes titleGlow {
+
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.04);
+            }
+        }
+
+
+        h2 {
+
+            margin-top: 10px;
+
+            font-size:
+                clamp(23px, 5vw, 34px);
+
+            color: #fff0f7;
+        }
+
+
+        /* =========================
+           PHOTO
+        ========================= */
+
+        .photo-box {
+
+            width:
+                clamp(130px, 35vw, 190px);
+
+            height:
+                clamp(130px, 35vw, 190px);
+
+            margin: 25px auto;
+
+            padding: 7px;
+
+            border-radius: 50%;
+
+            background:
+                linear-gradient(
+                    45deg,
+                    #fff,
+                    #ff1493,
+                    #ffd700,
+                    #fff
+                );
+
+            animation:
+                photoGlow 2s infinite alternate;
+        }
+
+
+        .photo-box img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            border-radius: 50%;
+
+            border:
+                5px solid white;
+
+            display: block;
+        }
+
+
+        @keyframes photoGlow {
+
+            from {
+
+                box-shadow:
+                    0 0 10px white;
+            }
+
+            to {
+
+                box-shadow:
+                    0 0 35px #ff1493,
+                    0 0 50px #ffd700;
+            }
+        }
+
+
+        /* =========================
+           DATE
+        ========================= */
+
+        .date {
+
+            display: inline-block;
+
+            max-width: 100%;
+
+            padding:
+                9px 20px;
+
+            margin:
+                10px 0 15px;
+
+            background:
+                rgba(255,255,255,0.25);
+
+            border-radius: 30px;
+
+            font-size:
+                clamp(17px, 4vw, 22px);
+
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           CAKE
+        ========================= */
+
+        .cake {
+
+            font-size:
+                clamp(55px, 15vw, 75px);
+
+            margin: 10px;
+
+            animation:
+                cakeBounce 1.5s infinite;
+        }
+
+
+        @keyframes cakeBounce {
+
+            0%, 100% {
+
+                transform:
+                    translateY(0);
+            }
+
+            50% {
+
+                transform:
+                    translateY(-12px);
+            }
+        }
+
+
+        /* =========================
+           MESSAGE
+        ========================= */
+
+        .message {
+
+            width: 100%;
+
+            max-width: 560px;
+
+            margin: 15px auto;
+
+            font-size:
+                clamp(15px, 3.5vw, 18px);
+
+            line-height: 1.8;
+        }
+
+
+        /* =========================
+           BUTTONS
+        ========================= */
+
+        .buttons {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+            margin-top: 10px;
+        }
+
+
+        button {
+
+            border: none;
+
+            padding:
+                13px 20px;
+
+            border-radius: 30px;
+
+            background: white;
+
+            color: #d81b60;
+
+            font-size:
+                clamp(14px, 3vw, 17px);
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+
+            box-shadow:
+                0 8px 20px
+                rgba(0,0,0,0.2);
+        }
+
+
+        button:hover {
+
+            transform:
+                scale(1.08);
+
+            background:
+                #ffe6f0;
+        }
+
+
+        /* =========================
+           SPECIAL WISH
+        ========================= */
+
+        #wish {
+
+            display: none;
+
+            width: 100%;
+
+            margin-top: 25px;
+
+            padding:
+                clamp(15px, 4vw, 25px);
+
+            background:
+                rgba(255,255,255,0.25);
+
+            border-radius: 20px;
+
+            font-size:
+                clamp(16px, 4vw, 20px);
+
+            line-height: 1.8;
+
+            animation:
+                showWish 1s ease;
+        }
+
+
+        @keyframes showWish {
+
+            from {
+
+                opacity: 0;
+
+                transform:
+                    scale(0.5);
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform:
+                    scale(1);
+            }
+        }
+
+
+        /* =========================
+           BALLOONS
+        ========================= */
+
+        .balloon {
+
+            position: fixed;
+
+            font-size:
+                clamp(35px, 8vw, 60px);
+
+            animation:
+                balloonFloat
+                4s infinite ease-in-out;
+
+            z-index: 1;
+
+            pointer-events: none;
+        }
+
+
+        .balloon.left {
+
+            left:
+                clamp(5px, 3vw, 30px);
+
+            top:
+                clamp(15px, 5vw, 40px);
+        }
+
+
+        .balloon.right {
+
+            right:
+                clamp(5px, 3vw, 30px);
+
+            top:
+                clamp(20px, 6vw, 50px);
+
+            animation-delay: 1s;
+        }
+
+
+        @keyframes balloonFloat {
+
+            0%, 100% {
+
+                transform:
+                    translateY(0)
+                    rotate(-5deg);
+            }
+
+            50% {
+
+                transform:
+                    translateY(25px)
+                    rotate(5deg);
+            }
+        }
+
+
+        /* =========================
+           SMALL MOBILE
+        ========================= */
+
+        @media (max-width: 480px) {
+
+            body {
+
+                padding: 10px;
+
+                align-items: flex-start;
+
+                padding-top: 20px;
+
+                padding-bottom: 20px;
+            }
+
+
+            .card {
+
+                width: 100%;
+
+                padding:
+                    25px 15px;
+
+                border-radius: 25px;
+            }
+
+
+            .small-text {
+
+                line-height: 1.5;
+            }
+
+
+            h1 {
+
+                font-size: 35px;
+            }
+
+
+            h2 {
+
+                font-size: 23px;
+            }
+
+
+            .photo-box {
+
+                margin: 20px auto;
+            }
+
+
+            .message {
+
+                line-height: 1.7;
+            }
+
+
+            .buttons {
+
+                flex-direction: column;
+
+                width: 100%;
+            }
+
+
+            button {
+
+                width: 100%;
+
+                max-width: 280px;
+            }
+
+
+            .balloon {
+
+                opacity: 0.7;
+            }
+        }
+
+
+        /* =========================
+           VERY SMALL SCREEN
+        ========================= */
+
+        @media (max-width: 350px) {
+
+            h1 {
+
+                font-size: 30px;
+            }
+
+
+            h2 {
+
+                font-size: 21px;
+            }
+
+
+            .photo-box {
+
+                width: 120px;
+
+                height: 120px;
+            }
+
+
+            .date {
+
+                font-size: 15px;
+
+                padding:
+                    8px 15px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- FLOATING HEARTS -->
+
+    <div class="heart">❤️</div>
+    <div class="heart">💖</div>
+    <div class="heart">💕</div>
+    <div class="heart">💗</div>
+
+
+    <!-- BALLOONS -->
+
+    <div class="balloon left">
+        🎈
+    </div>
+
+    <div class="balloon right">
+        🎈
+    </div>
+
+
+    <!-- MAIN CARD -->
+
+    <div class="card">
+
+        <div class="small-text">
+            ✨ A Special Day For A Special Person ✨
+        </div>
+
+
+        <h1>
+            Happy Birthday
+        </h1>
+
+
+        <h2>
+            Dear Bhabi ❤️
+        </h2>
+
+
+        <!-- PHOTO -->
+
+        <div class="photo-box">
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkCAd2XABwU_VKT82LDxsm_dI0hGVAyH74TlqGWCRF6U7p6KshmH4I8DA&s=10"
+                alt="Bhabi"
+            >
+
+        </div>
+
+
+        <!-- DATE -->
+
+        <div class="date">
+            🎉 6 October 🎉
+        </div>
+
+
+        <!-- CAKE -->
+
+        <div class="cake">
+            🎂
+        </div>
+
+
+        <!-- MESSAGE -->
+
+        <p class="message">
+
+            🌸 May Allah bless you with
+            endless happiness, good health,
+            love and success. ❤️
+
+            <br><br>
+
+            You are not only my Bhabi,
+            but also a beautiful part
+            of our family. 💕
+
+            <br><br>
+
+            May your beautiful smile
+            always stay on your face
+            and may all your dreams
+            come true. ✨
+
+        </p>
+
+
+        <!-- BUTTONS -->
+
+        <div class="buttons">
+
+            <button onclick="playMusic()">
+                🎵 Play Birthday Song
+            </button>
+
+
+            <button onclick="showWish()">
+                💌 Open Special Wish
+            </button>
+
+        </div>
+
+
+        <!-- SPECIAL WISH -->
+
+        <div id="wish">
+
+            🌹 Dear Bhabi 🌹
+
+            <br><br>
+
+            🎂 Happy Birthday to you! 🎂
+
+            <br><br>
+
+            May Allah fill your life
+            with happiness, peace,
+            love and countless blessings. 🤲❤️
+
+            <br><br>
+
+            May every new year of your
+            life bring more beautiful
+            memories. 🌸
+
+            <br><br>
+
+            ✨ Stay Happy • Stay Blessed
+            • Keep Smiling ✨
+
+            <br><br>
+
+            ❤️ Lots of Love ❤️
+
+        </div>
+
+    </div>
+
+
+    <!-- MUSIC -->
+
+<audio id="birthdaySong" autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+
+
+<script>
+
+    /* =========================
+       MUSIC
+    ========================= */
+
+    const song =
+        document.getElementById("birthdaySong");
+
+
+    /* =========================
+       PAGE LOAD PAR MUSIC
+    ========================= */
+
+    window.addEventListener("load", function () {
+
+        song.volume = 1;
+
+        song.play()
+            .then(function () {
+
+                console.log(
+                    "🎵 Birthday song started!"
+                );
+
+            })
+            .catch(function (error) {
+
+                console.log(
+                    "Browser ne autoplay block kar diya."
+                );
+
+            });
+
+    });
+
+
+    /* =========================
+       PLAY MUSIC BUTTON
+    ========================= */
+
+    function playMusic() {
+
+        song.play();
+
+    }
+
+
+    /* =========================
+       SPECIAL WISH
+    ========================= */
+
+    function showWish() {
+
+        const wish =
+            document.getElementById("wish");
+
+
+        wish.style.display = "block";
+
+
+        /* Create Hearts */
+
+        for (let i = 0; i < 30; i++) {
+
+            const heart =
+                document.createElement("div");
+
+
+            heart.innerHTML = "❤️";
+
+
+            heart.style.position =
+                "fixed";
+
+
+            heart.style.left =
+                Math.random() * 100 + "%";
+
+
+            heart.style.top =
+                Math.random() * 100 + "%";
+
+
+            heart.style.fontSize =
+                Math.random() * 25 +
+                20 + "px";
+
+
+            heart.style.zIndex =
+                "100";
+
+
+            heart.style.pointerEvents =
+                "none";
+
+
+            document.body.appendChild(
+                heart
+            );
+
+
+            heart.animate(
+
+                [
+
+                    {
+                        transform:
+                            "translateY(0) scale(1)",
+
+                        opacity: 1
+                    },
+
+                    {
+                        transform:
+                            "translateY(-200px) scale(1.5)",
+
+                        opacity: 0
+                    }
+
+                ],
+
+                {
+
+                    duration: 2000,
+
+                    easing: "ease-out"
+
+                }
+
+            );
+
+
+            setTimeout(function () {
+
+                heart.remove();
+
+            }, 2000);
+
+        }
+
+    }
+
+</script>
+
+
+
+</body>
+</html>
+
